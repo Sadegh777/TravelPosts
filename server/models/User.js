@@ -2,7 +2,7 @@ const { Schema, model} = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const userSchema = new Schema({
-    username: {
+  username: {
     type: String,
     required: 'A username is required',
     unique: true,
@@ -19,7 +19,7 @@ const userSchema = new Schema({
     required: 'Add your password',
     minlength: 6,
   },
-  Memories: [
+  memories: [
     {
       type: Schema.Types.ObjectId,
       ref: 'Memory',
