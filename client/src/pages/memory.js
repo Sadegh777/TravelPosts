@@ -25,9 +25,7 @@ const SingleMemory = () => {
   }
   return (
     <div className="my-3">
-        <h2 >
-            {memory.memoryTitle} <br />
-        </h2>
+        
         <h3 className="card-header bg-dark text-light p-2 m-0">
         {memory.memoryAuthor} <br />
         <span style={{ fontSize: '1rem' }}>

@@ -2,16 +2,16 @@ const { Schema, model} = require ('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const memorySchema = new Schema({
-    memoryTitle: {
-      type: String,
-      required: true,
-      minlength: 1,
-      maxlength: 50,
-      trim: true,
-    },
+    // memoryTitle: {
+    //   type: String,
+    //   // required: true,
+    //   minlength: 1,
+    //   maxlength: 50,
+    //   trim: true,
+    // },
     memoryText: {
       type: String,
-      required: 'What memory do you want to share',
+      required: true,
       minlength: 1,
       maxlength: 300,
       trim: true,
