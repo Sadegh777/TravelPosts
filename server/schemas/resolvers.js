@@ -48,10 +48,9 @@ const resolvers = {
 
       return { token, user };
     },
-    addMemory: async (parent, { memoryText, memoryTitle }, context) => {
+    addMemory: async (parent, { memoryText}, context) => {
       if (context.user) {
         const memory = await Memory.create({
-          memoryTitle,
           memoryText,
           memoryAuthor: context.user.username,
         });

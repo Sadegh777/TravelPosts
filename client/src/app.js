@@ -11,14 +11,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-import Memory from './pages/Memory'
+import SingleMemory from './pages/Memory'
 import User from './pages/User';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:3001/graphql",
+  uri: '/graphql',
 });
 
 
@@ -69,8 +69,8 @@ function App() {
                 element={<User />}
               />
               <Route 
-                path="/memories/:memoriesId" 
-                element={<Memory />}
+                path="/memories/:memoryId" 
+                element={<SingleMemory />}
               />
             </Routes>
           </div>

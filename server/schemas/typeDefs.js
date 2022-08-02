@@ -11,7 +11,6 @@ const typeDefs = gql`
 
   type Memory {
     _id: ID
-    memoryTitle:String
     memoryText: String
     memoryAuthor: String
     createdAt: String
