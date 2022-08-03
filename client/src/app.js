@@ -19,7 +19,7 @@ import { Container, Box, CssBaseline} from '@material-ui/core';
 
 import useStyles from './styles';
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: 'http://localhost:3001/graphql',
 });
 
 
@@ -86,5 +86,6 @@ function App() {
     </ApolloProvider>
   );
 }
+
 
 export default App;

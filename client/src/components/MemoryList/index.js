@@ -8,7 +8,7 @@ const MemoryList = ({
   showUsername = true,
 }) => {
   if (!memories.length) {
-    return <h3>Add a memory to recall</h3>;
+    return <h3>Add a memory to Recall</h3>;
   }
 
   return (
@@ -43,7 +43,7 @@ const MemoryList = ({
               className="btn btn-primary btn-block btn-squared"
               to={`/memories/${memory._id}`}
             >
-              Recall Life
+              Comment on this memory
             </Link>
           </div>
         ))}
