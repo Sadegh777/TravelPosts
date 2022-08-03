@@ -18,7 +18,7 @@ import Footer from './components/Footer';
 
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: 'http://localhost:3001/graphql',
 });
 
 
@@ -80,5 +80,6 @@ function App() {
     </ApolloProvider>
   );
 }
+
 
 export default App;
