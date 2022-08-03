@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
-
+import { TextField, Button, Container, Grid } from '@material-ui/core';
 import Auth from '../utils/auth';
 
 const Login = (props) => {
@@ -52,31 +52,31 @@ const Login = (props) => {
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
+              <Container maxWidth="lg" justify="center" >
+                <Grid  container justify="space-between" alignItems="stretch" spacing={3}>
               <form onSubmit={handleFormSubmit}>
-                <input
+                <TextField id="outlined-basic" label="YOUR EMAIL" variant="outlined" j
                   className="form-input"
                   placeholder="Your email"
                   name="email"
                   type="email"
                   value={formState.email}
                   onChange={handleChange}
-                />
-                <input
+                >
+               </TextField>
+                
+                <TextField name="PASSWORD" variant="outlined"
                   className="form-input"
-                  placeholder="******"
-                  name="password"
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
                 />
-                <button
-                  className="btn btn-block btn-primary"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
+                <Button variant="contained" color="secondary" size="lg">
+                   Submit
+                </Button>
               </form>
+              </Grid>
+              </Container>
             )}
 
             {error && (
