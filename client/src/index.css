@@ -39,5 +39,6 @@ body {
     .memoryCard {
         background-color:yellowgreen;
         opacity: 85%;
+        text-decoration: none;
         
     }
