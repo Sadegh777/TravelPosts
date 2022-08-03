@@ -21,7 +21,7 @@ const MemoryList = ({
               {showUsername ? (
                 <Link
                   className="text-light"
-                  to={`/users/${memory.memoryAuthor}`}
+                  to={`/user/${memory.memoryAuthor}`}
                 >
                   {memory.memoryAuthor} <br />
                   <span style={{ fontSize: '1rem' }}>
