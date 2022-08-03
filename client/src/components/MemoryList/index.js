@@ -62,7 +62,7 @@ const MemoryList = ({
               )}
             </h4>
             <div className="card-body bg-light p-2">
-              <h1>{memory.memoryTitle}</h1> <br/>
+              <h2>{memory.memoryTitle}</h2> <br/>
               <p>{memory.memoryText}</p>
             </div>
             {/* <button
