@@ -15,9 +15,9 @@ import SingleMemory from './pages/Memory'
 import User from './pages/User';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Container, Box, CssBaseline} from '@material-ui/core';
 
-import useStyles from './styles';
+
+
 const httpLink = createHttpLink({
   uri: 'http://localhost:3001/graphql',
 });
@@ -41,16 +41,17 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 function App() {
-  const classes = useStyles();
   return (
+
     <ApolloProvider client={client}>
      
-      <Container maxWidth="lg" justifyContent="center">
+      
       <Router>
-        <div >
+        <div className="flex-column justify-flex-start min-100-vh">
           <Header />
-          <div >
+          <div className="container">
             <Routes>
               <Route 
                 path="/"
@@ -81,9 +82,10 @@ function App() {
           <Footer />
         </div>
       </Router>
-    </Container>
+   
   
     </ApolloProvider>
+
   );
 }
 
