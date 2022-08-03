@@ -17,7 +17,7 @@ body {
     max-width: 100%;
     }
 
-
+/* mainly Home page and memory form and list */
     .header {
         background-color: black;
         display: flex;
@@ -38,16 +38,21 @@ body {
     }
 
     .memoryCard {
-        background-color:yellowgreen;
+        background-color:rgb(174, 115, 21);
         opacity: 85%;
         text-decoration: none;
         margin: 5px;
         padding: 5px;
+        outline: none;
+        border-radius: 10px;
+        
         
     }
 
     .memForm {
         background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 10px;
         
 
     }
@@ -59,4 +64,25 @@ body {
     .submitBtn{
         text-align: center;
         
+    }
+
+    .homeHead{
+        text-align: center;
+    }
+
+    /* login page */
+
+    .loginDiv{
+        display: flex;
+        width: 100vh;
+    }
+
+    .loginForm{
+        justify-content: center;
+        width: 500px;
+        height: 50px;
+    }
+
+    .submitBtn{
+        width: 84px;
     }
