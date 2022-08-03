@@ -68,7 +68,7 @@ const MemoryForm = () => {
   };
 
   return (
-    <div>
+    <div className='memForm'>
       <h3>What Experience do you want to share</h3>
 
       {Auth.loggedIn() ? (
