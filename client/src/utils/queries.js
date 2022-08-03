@@ -8,6 +8,7 @@ export const QUERY_USER = gql`
       email
       memories {
         _id
+        memoryTitle
         memoryText
         createdAt
       }
@@ -19,6 +20,7 @@ export const QUERY_MEMORIES = gql`
   query getMemories {
     memories {
       _id
+      memoryTitle
       memoryText
       memoryAuthor
       createdAt
@@ -30,6 +32,7 @@ export const QUERY_MEMORY = gql`
   query getMemory($memoryId: ID!) {
     memory(memoryId: $memoryId) {
       _id
+      memoryTitle
       memoryText
       memoryAuthor
       createdAt
@@ -51,6 +54,7 @@ export const QUERY_ME = gql`
       email
       memories {
         _id
+        memoryTitle
         memoryText
         memoryAuthor
         createdAt

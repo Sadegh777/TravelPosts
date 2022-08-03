@@ -55,25 +55,29 @@ const Login = (props) => {
               <Container maxWidth="lg" justify="center" >
                 <Grid  container justify="space-between" alignItems="stretch" spacing={3}>
               <form onSubmit={handleFormSubmit}>
-                <TextField id="outlined-basic" label="YOUR EMAIL" variant="outlined" j
+              <input
                   className="form-input"
                   placeholder="Your email"
                   name="email"
                   type="email"
                   value={formState.email}
                   onChange={handleChange}
-                >
-               </TextField>
-                
-                <TextField name="PASSWORD" variant="outlined"
+                />
+                <input
                   className="form-input"
+                  placeholder="******"
+                  name="password"
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
                 />
-                <Button variant="contained" color="secondary" size="lg">
-                   Submit
-                </Button>
+                <button
+                  className="btn btn-block btn-primary"
+                  style={{ cursor: 'pointer' }}
+                  type="submit"
+                >
+                  Submit
+                </button>
               </form>
               </Grid>
               </Container>

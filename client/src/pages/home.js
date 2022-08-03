@@ -25,7 +25,7 @@ const Home = () => {
           ) : (
             <MemoryList
               memories={memories}
-              title="Test memory list title"
+              title="Those who experience"
             />
           )}
         </div>

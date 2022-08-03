@@ -25,9 +25,10 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_MEMORY = gql`
-  mutation addMemory($memoryText: String!) {
-    addMemory(memoryText: $memoryText) {
+  mutation addMemory($memoryTitle: String, $memoryText: String!) {
+    addMemory(memoryTitle: $memoryTitle, memoryText: $memoryText) {
       _id
+      memoryTitle
       memoryText
       memoryAuthor
       createdAt
@@ -43,6 +44,7 @@ export const ADD_COMMENT = gql`
   mutation addComment($memoryId: ID!, $commentText: String!) {
     addComment(memoryId: $memoryId, commentText: $commentText) {
       _id
+      memoryTitle
       memoryText
       memoryAuthor
       createdAt
@@ -51,6 +53,14 @@ export const ADD_COMMENT = gql`
         commentText
         createdAt
       }
+    }
+  }
+`;
+
+export const REMOVE_MEMORY = gql`
+  mutation removeMemory($memoryId: ID!) {
+    removeMemory(memoryID: $memoryID) {
+      _id  
     }
   }
 `;
