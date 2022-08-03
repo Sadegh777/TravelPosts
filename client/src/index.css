@@ -41,6 +41,8 @@ body {
         background-color:yellowgreen;
         opacity: 85%;
         text-decoration: none;
+        margin: 5px;
+        padding: 5px;
         
     }
 
@@ -48,4 +50,13 @@ body {
         background-color: whitesmoke;
         
 
+    }
+
+    textarea {
+        width:300px;
+    }
+
+    .submitBtn{
+        text-align: center;
+        
     }
