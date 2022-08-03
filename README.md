@@ -6,7 +6,7 @@
 
   # Description
 
-  full MERNG stack that allows for user memory (post) creations and user comments on said memories, React, Express, MongoDB, Node and GraphQL used to connect to a database, push information to be stored and pulls information to populate fields.
+  full MERNG stack that allows for user memory (post) creations and user comments on said memories, React, Express, MongoDB, Node and GraphQL used to       connect to a database, push information to be stored and pulls information to populate fields.
 
   # table of contents
 
@@ -17,6 +17,7 @@
   - [License] (##license)
   - [Testing] (##testing)
   - [Questions] (##questions)
+  - [Libraries] (##libraries)
 
   # Installation
   Run npm run install for dependencies, npm run build to create the build file then npm run start(or develop) to begin the server.
@@ -43,6 +44,14 @@
 
   # Deployment
   https://frozen-taiga-63568.herokuapp.com/
-
+  
+  ## Languages and libraries used in this project:
+  
+- <a href="https://www.npmjs.com/">NPM</a>
+- <a href="https://nodejs.org/">Node.js</a>
+- <a href="https://www.mongodb.com/">mongodb</a>
+- <a href="https://reactjs.org/">React</a>
+- <a href="https://www.npmjs.com/package/express">Express.js</a>
+- <a href="https://getbootstrap.com/docs/5.1/getting-started/download/">Bootstrap</a>
 
 
