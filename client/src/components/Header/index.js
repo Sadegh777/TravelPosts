@@ -11,9 +11,9 @@ const Header = () => {
   return (
     <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <div>
+        <div className='header'>
           <Link className="text-light" to="/">
-            <h1 className="m-0">TravelPosts</h1>
+            <h1 className="m-0 title">TravelPosts</h1>
           </Link>
         </div>
         <div>
@@ -28,11 +28,11 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-info m-2" to="/login">
-                Login
+              <Link className="btn btn-lg btn-info m-2 navbar" to="/login">
+                Login |
               </Link>
-              <Link className="btn btn-lg btn-info m-2" to="/signup">
-                Sign up
+              <Link className="btn btn-lg btn-info m-2 navbar" to="/signup">
+                Signup
               </Link>
               {/* <Link className="btn btn-lg btn-light m-2" to="/user">
                 User Profile
