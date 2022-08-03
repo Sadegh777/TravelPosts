@@ -2,7 +2,12 @@ const { Schema, model} = require ('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const memorySchema = new Schema({
-    
+    memoryTitle: {
+      type: String,
+      minlength:1,
+      maxlength:100,
+      trim: true
+    },
     memoryText: {
       type: String,
       required: true,

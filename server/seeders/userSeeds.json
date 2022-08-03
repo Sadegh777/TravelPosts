@@ -1,0 +1,32 @@
+[
+    {
+        "username": "chaos",
+        "email": "chaos@fakeemail.com",
+        "password": "123456"
+    },
+    {
+        "username": "Amy Mildtown",
+        "email": "ATown@fakeemail.com",
+        "password": "234567"
+    },
+    {
+        "username": "Timmy Helt",
+        "email": "THelt@fakeemail.com",
+        "password": "345678"
+    },
+    {
+        "username": "Russell Chaos Dunn",
+        "email": "RCD@fakeemail.com",
+        "password": "456789"
+    },
+    {
+        "username": "Wendy Ramson",
+        "email": "WR@fakeemail.com",
+        "password": "567891"
+    },
+    {
+        "username": "Donny Coder",
+        "email": "DCoder@fakeemail.com",
+        "password": "678912"
+    }
+]

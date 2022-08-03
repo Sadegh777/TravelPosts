@@ -11,6 +11,7 @@ const typeDefs = gql`
 
   type Memory {
     _id: ID
+    memoryTitle: String
     memoryText: String
     memoryAuthor: String
     createdAt: String
@@ -40,7 +41,7 @@ const typeDefs = gql`
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addMemory(memoryText: String!): Memory
+    addMemory(memoryTitle: String, memoryText: String!): Memory
     addComment(memoryId: ID!, commentText: String!): Memory
     removeMemory(memoryId: ID!): Memory
     removeComment(memoryId: ID!, commentId: ID!): Memory
