@@ -37,7 +37,7 @@ const MemoryList = ({
   // };
 
   return (
-    <div>
+    <div className='memoryCard'>
       {showTitle && <h3>{title}</h3>}
       {memories &&
         memories.map((memory) => (

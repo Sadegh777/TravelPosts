@@ -55,10 +55,10 @@ const Login = (props) => {
 
             
               <form onSubmit={handleFormSubmit} >
-                 <div class="form-outline mb-4 ">
+                 <div class="form-outline mb-4 loginDiv">
 
               <input
-                  className="form-input"
+                  className="form-input loginForm"
                   placeholder="Your email"
                   name="email"
                   type="email"
@@ -70,7 +70,7 @@ const Login = (props) => {
                 <div class="form-outline mb-4">
 
                 <input
-                  className="form-input"
+                  className="form-input loginForm"
                   placeholder="******"
                   name="password"
                   type="password"
@@ -80,7 +80,7 @@ const Login = (props) => {
 
                 </div>
                 <button
-                  className="btn btn-primary btn-block btn-lg"
+                  className="btn btn-primary btn-block btn-lg submitBtn"
 
                   style={{ cursor: 'pointer' }}
                   type="submit"
