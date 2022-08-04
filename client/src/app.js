@@ -15,7 +15,7 @@ import SingleMemory from './pages/Memory'
 import User from './pages/User';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { Container, Box, CssBaseline} from '@material-ui/core';
+
 
 import useStyles from './styles';
 const httpLink = createHttpLink({
