@@ -8,6 +8,8 @@ import { QUERY_MEMORIES, QUERY_ME } from '../../utils/queries';
 import Auth from '../../utils/auth';
 
 const MemoryForm = () => {
+  const [memoryTitle, setMemoryTitle] = useState('');
+
   const [memoryText, setMemoryText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
@@ -40,11 +42,13 @@ const MemoryForm = () => {
     try {
       const { data } = await addMemory({
         variables: {
+          memoryTitle,
           memoryText,
           memoryAuthor: Auth.getProfile().data.username,
         },
       });
 
+      setMemoryTitle('');
       setMemoryText('');
     } catch (err) {
       console.error(err);
@@ -58,10 +62,13 @@ const MemoryForm = () => {
       setMemoryText(value);
       setCharacterCount(value.length);
     }
+    if (name === 'memoryTitle') {
+      setMemoryTitle(value);
+    }
   };
 
   return (
-    <div>
+    <div className='memForm'>
       <h3>What Experience do you want to share</h3>
 
       {Auth.loggedIn() ? (
@@ -79,6 +86,14 @@ const MemoryForm = () => {
           >
             <div className="col-12 col-lg-9">
               <textarea
+                name="memoryTitle"
+                placeholder="title"
+                value={memoryTitle}
+                style={{ lineHeight: '1.5', resize: 'vertical' }}
+                onChange={handleChange}
+                >
+              </textarea>
+              <textarea
                 name="memoryText"
                 placeholder="Share a new memory"
                 value={memoryText}
@@ -89,7 +104,7 @@ const MemoryForm = () => {
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
+              <button className="btn btn-primary btn-block py-3 submitBtn" type="submit">
                 Experience a memory
               </button>
             </div>

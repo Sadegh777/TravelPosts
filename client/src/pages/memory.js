@@ -42,6 +42,7 @@ const SingleMemory = () => {
             lineHeight: '1.5',
           }}
         >
+          {memory.memoryTitle} <br />
           {memory.memoryText}
         </blockquote>
       </div>

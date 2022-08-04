@@ -19,13 +19,13 @@ const Home = () => {
         >
           <MemoryForm />
         </div>
-        <div className="col-12 col-md-8 mb-3">
+        <div className="col-12 col-md-8 mb-3 homeHead">
           {loading ? (
             <div>Loading...</div>
           ) : (
             <MemoryList
               memories={memories}
-              title="Test memory list title"
+              title="Those who experience"
             />
           )}
         </div>

@@ -8,16 +8,17 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';
+import Home from './pages/home';
 import Signup from './pages/Signup';
-import Login from './pages/Login';
-import SingleMemory from './pages/Memory'
-import User from './pages/User';
+import Login from './pages/login';
+import SingleMemory from './pages/memory'
+import User from './pages/user';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
 
-import useStyles from './styles';
+
+
 const httpLink = createHttpLink({
   uri: 'http://localhost:3001/graphql',
 });
@@ -41,16 +42,17 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 function App() {
-  const classes = useStyles();
   return (
+
     <ApolloProvider client={client}>
      
-      <Container maxWidth="lg" justifyContent="center">
+      
       <Router>
-        <div >
+        <div className="flex-column justify-flex-start min-100-vh">
           <Header />
-          <div >
+          <div className="container">
             <Routes>
               <Route 
                 path="/"
@@ -81,9 +83,10 @@ function App() {
           <Footer />
         </div>
       </Router>
-    </Container>
+   
   
     </ApolloProvider>
+
   );
 }
 
